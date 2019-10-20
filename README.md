@@ -4,15 +4,44 @@ Lightweight TOR relay image, based on the ["lsiobase/alpine" Docker image](https
 
 ## Usage
 
+### Bridge mode
+
 ```bash
 docker run \
-  # -d \
+  -d \
   --name tor-relay \
+  -e RELAY_TYPE=bridge \
   -e TOR_ORPort=9001 \
   -e TZ=Europe/London \
-  -e TYPE= \
   -p 9001:9001 \
-  # -u $(id -u)/$(id -g) \
+  --restart always \
+  ilshidur/tor-relay
+```
+
+### Relay mode
+
+```bash
+docker run \
+  -d \
+  --name tor-relay \
+  -e RELAY_TYPE=relay \
+  -e TOR_ORPort=9001 \
+  -e TZ=Europe/London \
+  -p 9001:9001 \
+  --restart always \
+  ilshidur/tor-relay
+```
+
+### Exit node mode
+
+```bash
+docker run \
+  -d \
+  --name tor-relay \
+  -e RELAY_TYPE=exit \
+  -e TOR_ORPort=9001 \
+  -e TZ=Europe/London \
+  -p 9001:9001 \
   --restart always \
   ilshidur/tor-relay
 ```
@@ -25,3 +54,7 @@ Everyline can be changed using environment variables as described below :
 `TOR_<configuration>=<value>` will uncomment the first line starting with `<configuration>` and set its value to `<value>`.
 
 *Example : setting `TOR_ORPort` to `9002` will change the line `#ORPort 9001` to `ORPort 9002`.*
+
+## License
+
+MIT

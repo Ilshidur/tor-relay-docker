@@ -1,5 +1,8 @@
-touch /etc/tor/torrc
+#!/bin/bash
 
-#TODO:
+# set -euxo pipefail
+set -e
 
-exec tor -f "/etc/tor/torrc" --defaults-torrc "/etc/tor/torrc.default"
+env | grep '^TOR_' | tr "=" " " | cut -c 5- > /etc/tor/torrc
+
+exec tor -f /etc/tor/torrc --defaults-torrc "/etc/tor/torrc.${RELAY_TYPE}.default"

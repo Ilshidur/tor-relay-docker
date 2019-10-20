@@ -225,7 +225,7 @@
 #ExitPolicy accept *:119 # accept nntp ports on IPv4 and IPv6 as well as default exit policy
 #ExitPolicy accept *4:119 # accept nntp ports on IPv4 only as well as default exit policy
 #ExitPolicy accept6 *6:119 # accept nntp ports on IPv6 only as well as default exit policy
-#ExitPolicy reject *:* # no exits allowed
+ExitPolicy reject *:* # no exits allowed
 
 ## Bridge relays (or "bridges") are Tor relays that aren't listed in the
 ## main directory. Since there is no complete public list of them, even an
@@ -236,7 +236,7 @@
 ##
 ## Warning: when running your Tor as a bridge, make sure than MyFamily is
 ## NOT configured.
-#BridgeRelay 1
+BridgeRelay 1
 ## By default, Tor will advertise your bridge to users through various
 ## mechanisms like https://bridges.torproject.org/. If you want to run
 ## a private bridge, for example because you'll give out your bridge
