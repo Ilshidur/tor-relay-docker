@@ -1,6 +1,6 @@
 # tor-relay-docker
 
-Lightweight TOR relay image, based on the ["lsiobase/alpine" Docker image](https://hub.docker.com/r/lsiobase/alpine) provided by https://linuxserver.io.
+Lightweight TOR relay image, based on Alpine Linux. Configurations can be passed as environment variables.
 
 ## Usage
 
