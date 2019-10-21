@@ -16,6 +16,7 @@ docker run \
   -e TOR_RelayBandwidthRate="100 KBytes" \
   -e TOR_RelayBandwidthBurst="200 KBytes" \
   -e TZ=Europe/London \
+  -v $(pwd)/tor/data:/var/lib/tor:Z \
   -p 9001:9001 \
   --restart always \
   ilshidur/tor-relay
@@ -33,6 +34,7 @@ docker run \
   -e TOR_RelayBandwidthRate="100 KBytes" \
   -e TOR_RelayBandwidthBurst="200 KBytes" \
   -e TZ=Europe/London \
+  -v $(pwd)/tor/data:/var/lib/tor:Z \
   -p 9001:9001 \
   --restart always \
   ilshidur/tor-relay
@@ -50,6 +52,7 @@ docker run \
   -e TOR_RelayBandwidthRate="100 KBytes" \
   -e TOR_RelayBandwidthBurst="200 KBytes" \
   -e TZ=Europe/London \
+  -v $(pwd)/tor/data:/var/lib/tor:Z \
   -p 9001:9001 \
   --restart always \
   ilshidur/tor-relay
