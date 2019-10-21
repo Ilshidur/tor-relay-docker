@@ -2,7 +2,9 @@ FROM alpine:3.10
 
 LABEL maintainer "Nicolas Coutin <ilshidur@gmail.com>"
 
-RUN apk --no-cache add tor bash tzdata
+RUN sed -i -e 's/v[[:digit:]]\..*\//edge\//g' /etc/apk/repositories
+RUN apk update
+RUN apk --no-cache add bash tzdata tor
 ENV TZ America/Los_Angeles
 
 EXPOSE 9001
