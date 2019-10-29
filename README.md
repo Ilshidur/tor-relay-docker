@@ -2,6 +2,8 @@
 
 Lightweight TOR relay image, based on Alpine Linux. Configurations can be passed as environment variables.
 
+[![dockeri.co](https://dockeri.co/image/ilshidur/tor-relay)](https://hub.docker.com/r/ilshidur/tor-relay)
+
 ## Usage
 
 ### Bridge mode
