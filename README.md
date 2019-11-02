@@ -1,6 +1,6 @@
 # tor-relay-docker
 
-Lightweight TOR relay image, based on Alpine Linux. Configurations can be passed as environment variables.
+Lightweight TOR relay image, based on [LinuxServer.io Alpine Linux](https://linuxserver.io). Configurations can be passed as environment variables.
 
 [![dockeri.co](https://dockeri.co/image/ilshidur/tor-relay)](https://hub.docker.com/r/ilshidur/tor-relay)
 
@@ -18,6 +18,8 @@ docker run \
   -e TOR_RelayBandwidthRate="100 KBytes" \
   -e TOR_RelayBandwidthBurst="200 KBytes" \
   -e TZ=Europe/London \
+  -e PUID=$(id -u) \
+  -e PGID=$(id -g) \
   -v $(pwd)/tor/data:/var/lib/tor:Z \
   -p 9001:9001 \
   --restart always \
@@ -36,6 +38,8 @@ docker run \
   -e TOR_RelayBandwidthRate="100 KBytes" \
   -e TOR_RelayBandwidthBurst="200 KBytes" \
   -e TZ=Europe/London \
+  -e PUID=$(id -u) \
+  -e PGID=$(id -g) \
   -v $(pwd)/tor/data:/var/lib/tor:Z \
   -p 9001:9001 \
   --restart always \
@@ -54,6 +58,8 @@ docker run \
   -e TOR_RelayBandwidthRate="100 KBytes" \
   -e TOR_RelayBandwidthBurst="200 KBytes" \
   -e TZ=Europe/London \
+  -e PUID=$(id -u) \
+  -e PGID=$(id -g) \
   -v $(pwd)/tor/data:/var/lib/tor:Z \
   -p 9001:9001 \
   --restart always \
