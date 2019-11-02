@@ -20,7 +20,7 @@ docker run \
   -e TZ=Europe/London \
   -e PUID=$(id -u) \
   -e PGID=$(id -g) \
-  -v $(pwd)/tor/data:/var/lib/tor:Z \
+  -v $(pwd)/tor/data:/data:Z \
   -p 9001:9001 \
   --restart always \
   ilshidur/tor-relay
@@ -40,7 +40,7 @@ docker run \
   -e TZ=Europe/London \
   -e PUID=$(id -u) \
   -e PGID=$(id -g) \
-  -v $(pwd)/tor/data:/var/lib/tor:Z \
+  -v $(pwd)/tor/data:/data:Z \
   -p 9001:9001 \
   --restart always \
   ilshidur/tor-relay
@@ -60,7 +60,7 @@ docker run \
   -e TZ=Europe/London \
   -e PUID=$(id -u) \
   -e PGID=$(id -g) \
-  -v $(pwd)/tor/data:/var/lib/tor:Z \
+  -v $(pwd)/tor/data:/data:Z \
   -p 9001:9001 \
   --restart always \
   ilshidur/tor-relay
