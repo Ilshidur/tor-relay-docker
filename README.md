@@ -82,6 +82,6 @@ MIT
 <hr/>
 
 <p align="center">
-  Don't forget to 🌟 Star 🌟 the repo if you like this GitHub Action !<br/>
+  Don't forget to 🌟 Star 🌟 the repo if you like this Docker image !<br/>
   <a href="https://github.com/Ilshidur/tor-relay-docker/issues/new">Your feedback is appreciated</a>
 </p>
