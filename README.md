@@ -1,6 +1,6 @@
-# tor-relay-docker
+# 🐋 ilshidur/tor-relay
 
-Lightweight TOR relay image, based on [LinuxServer.io Alpine Linux](https://linuxserver.io). Configurations can be passed as environment variables.
+> Lightweight TOR relay image, based on [LinuxServer.io Alpine Linux](https://linuxserver.io). Configurations can be passed as environment variables.
 
 [![dockeri.co](https://dockeri.co/image/ilshidur/tor-relay)](https://hub.docker.com/r/ilshidur/tor-relay)
 
@@ -78,3 +78,10 @@ Everyline can be changed using environment variables as described below :
 ## License
 
 MIT
+
+<hr/>
+
+<p align="center">
+  Don't forget to 🌟 Star 🌟 the repo if you like this GitHub Action !<br/>
+  <a href="https://github.com/Ilshidur/tor-relay-docker/issues/new">Your feedback is appreciated</a>
+</p>
