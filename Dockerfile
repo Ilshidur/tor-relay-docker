@@ -16,6 +16,7 @@ EXPOSE 9001 9030
 # TOR configuration through environment variables.
 ENV RELAY_TYPE relay
 ENV TOR_ORPort 9001
+ENV TOR_DirPort 9030
 ENV TOR_DataDirectory /data
 ENV TOR_ContactInfo "Random Person nobody@tor.org"
 ENV TOR_RelayBandwidthRate "100 KBytes"
