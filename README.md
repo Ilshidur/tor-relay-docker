@@ -48,6 +48,8 @@ docker run \
 
 ### Exit node mode
 
+**It is highly recommended against setting up this type of configuration in a home network.**
+
 ```bash
 docker run \
   -d \
