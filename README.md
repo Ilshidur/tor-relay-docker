@@ -1,6 +1,6 @@
 # 🐋 ilshidur/tor-relay
 
-> Lightweight TOR relay image (12.94 MB), based on [LinuxServer.io Alpine Linux](https://linuxserver.io). Configurations can be passed as environment variables.
+> Lightweight TOR relay image (13.37 MB), based on [LinuxServer.io Alpine Linux](https://linuxserver.io). Configurations can be passed as environment variables.
 
 [![dockeri.co](https://dockeri.co/image/ilshidur/tor-relay)](https://hub.docker.com/r/ilshidur/tor-relay)
 
