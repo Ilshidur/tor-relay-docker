@@ -1,4 +1,4 @@
-FROM lsiobase/alpine:3.11
+FROM lsiobase/alpine:3.12
 
 LABEL maintainer "Nicolas Coutin <ilshidur@gmail.com>"
 
