@@ -50,6 +50,8 @@ docker run \
 
 **It is highly recommended against setting up this type of configuration in a home network.**
 
+[Tips for Running an Exit Node.](https://blog.torproject.org/tips-running-exit-nodehttps://blog.torproject.org/tips-running-exit-node)
+
 ```bash
 docker run \
   -d \
