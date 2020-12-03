@@ -14,6 +14,7 @@ docker run \
   --name tor-relay \
   -e RELAY_TYPE=bridge \
   -e TOR_ORPort=9001 \
+  -e TOR_DirPort=9030 \
   -e TOR_Nickname=ididnteditheconfig \
   -e TOR_RelayBandwidthRate="100 KBytes" \
   -e TOR_RelayBandwidthBurst="200 KBytes" \
@@ -22,6 +23,7 @@ docker run \
   -e PGID=$(id -g) \
   -v $(pwd)/tor/data:/data:Z \
   -p 9001:9001 \
+  -p 9030:9030 \
   --restart always \
   ilshidur/tor-relay
 ```
@@ -34,6 +36,7 @@ docker run \
   --name tor-relay \
   -e RELAY_TYPE=relay \
   -e TOR_ORPort=9001 \
+  -e TOR_DirPort=9030 \
   -e TOR_Nickname=ididnteditheconfig \
   -e TOR_RelayBandwidthRate="100 KBytes" \
   -e TOR_RelayBandwidthBurst="200 KBytes" \
@@ -42,6 +45,7 @@ docker run \
   -e PGID=$(id -g) \
   -v $(pwd)/tor/data:/data:Z \
   -p 9001:9001 \
+  -p 9030:9030 \
   --restart always \
   ilshidur/tor-relay
 ```
@@ -58,6 +62,7 @@ docker run \
   --name tor-relay \
   -e RELAY_TYPE=exit \
   -e TOR_ORPort=9001 \
+  -e TOR_DirPort=9030 \
   -e TOR_Nickname=ididnteditheconfig \
   -e TOR_RelayBandwidthRate="100 KBytes" \
   -e TOR_RelayBandwidthBurst="200 KBytes" \
@@ -66,6 +71,7 @@ docker run \
   -e PGID=$(id -g) \
   -v $(pwd)/tor/data:/data:Z \
   -p 9001:9001 \
+  -p 9030:9030 \
   --restart always \
   ilshidur/tor-relay
 ```
