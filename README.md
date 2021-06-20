@@ -85,6 +85,10 @@ Everyline can be changed using environment variables as described below :
 
 *Example : setting `TOR_ORPort` to `9002` will change the line `#ORPort 9001` to `ORPort 9002`.*
 
+## TODO
+
+* Auto push to the Docker hub on commit.
+
 ## License
 
 MIT
