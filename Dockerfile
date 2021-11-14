@@ -9,7 +9,7 @@ ENV TZ America/Los_Angeles
 
 RUN sed -i -e 's/v[[:digit:]]\..*\//edge\//g' /etc/apk/repositories
 RUN apk update
-RUN apk --no-cache add bash tzdata tor=0.4.6.7-r0
+RUN apk --no-cache add bash tzdata tor=0.4.6.7-r1
 
 EXPOSE 9001 9030
 
