@@ -1,4 +1,4 @@
-FROM lsiobase/alpine:3.13
+FROM ghcr.io/linuxserver/baseimage-alpine:3.15
 
 LABEL maintainer "Nicolas Coutin <ilshidur@gmail.com>"
 
@@ -9,7 +9,7 @@ ENV TZ America/Los_Angeles
 
 RUN sed -i -e 's/v[[:digit:]]\..*\//edge\//g' /etc/apk/repositories
 RUN apk update
-RUN apk --no-cache add bash tzdata tor=0.4.6.7-r0
+RUN apk --no-cache add bash tzdata tor=0.4.6.10-r0
 
 EXPOSE 9001 9030
 
