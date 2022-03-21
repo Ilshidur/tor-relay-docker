@@ -1,6 +1,6 @@
 # 🐋 ilshidur/tor-relay
 
-> Lightweight TOR relay image (13.37 MB), based on [LinuxServer.io Alpine Linux](https://linuxserver.io). Configurations can be passed as environment variables.
+> Lightweight TOR relay image (15.89 MB), based on [LinuxServer.io Alpine Linux](https://linuxserver.io). Configurations can be passed as environment variables.
 
 [![dockeri.co](https://dockeri.co/image/ilshidur/tor-relay)](https://hub.docker.com/r/ilshidur/tor-relay)
 
@@ -76,6 +76,25 @@ docker run \
   ilshidur/tor-relay
 ```
 
+## Versions
+
+* Alpine base image : `3.15` using the Edge Repository.
+* Tor : `0.4.6.10-r0` ([alpine package](https://pkgs.alpinelinux.org/package/edge/community/x86/tor))
+
+### Docker images versioning
+
+Each build is shipped through 4 identical images with each having a different version :
+
+* `latest`
+* `<MAJOR.MINOR>`
+  * Having the latest base image and tor versions.
+  * e.g.: `ilshidur/tor-relay:2.0`
+* `<MAJOR.MINOR>-v<TOR ALPINE PACKAGE VERSION>`
+  * Having the latest base image version.
+  * e.g.: `ilshidur/tor-relay:2.0-v0.4.6.10-r0`
+* `<MAJOR.MINOR>-ls<BASE IMAGE VERSION>-v<TOR ALPINE PACKAGE VERSION>`
+  * e.g.: `ilshidur/tor-relay:2.0-ls3.15-v0.4.6.10-r0`
+
 ## Configuration
 
 The configuration is stored in a `/etc/tor/torrc` file.
@@ -87,7 +106,8 @@ Everyline can be changed using environment variables as described below :
 
 ## TODO
 
-* Auto push to the Docker hub on commit.
+* Auto push to the Docker hub on push.
+* Add ARM support.
 
 ## License
 
