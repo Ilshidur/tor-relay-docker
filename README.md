@@ -79,7 +79,7 @@ docker run \
 ## Versions
 
 * Alpine base image : `3.15` using the Edge Repository.
-* Tor : `0.4.6.10-r0` ([alpine package](https://pkgs.alpinelinux.org/package/edge/community/x86/tor))
+* Tor : `0.4.7.7-r1` ([alpine package](https://pkgs.alpinelinux.org/package/edge/community/x86/tor))
 
 ### Docker images versioning
 
@@ -88,12 +88,12 @@ Each build is shipped through 4 identical images with each having a different ve
 * `latest`
 * `<MAJOR.MINOR>`
   * Having the latest base image and tor versions.
-  * e.g.: `ilshidur/tor-relay:2.0`
+  * e.g.: `ilshidur/tor-relay:2.1`
 * `<MAJOR.MINOR>-v<TOR ALPINE PACKAGE VERSION>`
   * Having the latest base image version.
-  * e.g.: `ilshidur/tor-relay:2.0-v0.4.6.10-r0`
+  * e.g.: `ilshidur/tor-relay:2.1-v0.4.7.7-r1`
 * `<MAJOR.MINOR>-ls<BASE IMAGE VERSION>-v<TOR ALPINE PACKAGE VERSION>`
-  * e.g.: `ilshidur/tor-relay:2.0-ls3.15-v0.4.6.10-r0`
+  * e.g.: `ilshidur/tor-relay:2.1-ls3.15-v0.4.7.7-r1`
 
 ## Configuration
 
