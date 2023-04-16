@@ -17,8 +17,6 @@ ENV TOR_ORPort 9001
 ENV TOR_DirPort 9030
 ENV TOR_DataDirectory /data
 ENV TOR_ContactInfo "Random Person nobody@tor.org"
-ENV TOR_RelayBandwidthRate "100 KBytes"
-ENV TOR_RelayBandwidthBurst "200 KBytes"
 
 # Copy the default configurations.
 COPY torrc.bridge.default /config/torrc.bridge.default
