@@ -31,4 +31,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ${{ env.GITHUB_ACTOR }}/tor-relay:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/tor-relay:latest
