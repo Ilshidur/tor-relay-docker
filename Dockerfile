@@ -8,7 +8,7 @@ XDG_CONFIG_HOME="/config"
 ENV TZ America/Los_Angeles
 
 ADD repositories /etc/apk/repositories
-RUN apk --no-cache add bash tzdata tor=0.4.7.13-r1 nyx
+RUN apk --no-cache add bash tzdata tor nyx
 
 EXPOSE 9001 9030
 
