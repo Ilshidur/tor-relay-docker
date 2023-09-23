@@ -1,6 +1,6 @@
 # 🐋 ilshidur/tor-relay
 
-> Lightweight TOR relay image (14.25 MB), based on [LinuxServer.io Alpine Linux](https://linuxserver.io). Configurations can be passed as environment variables.
+> Lightweight TOR relay image (14.99 MB), based on [LinuxServer.io Alpine Linux](https://linuxserver.io). Configurations can be passed as environment variables.
 
 [![dockeri.co](https://dockeri.co/image/ilshidur/tor-relay)](https://hub.docker.com/r/ilshidur/tor-relay)
 
@@ -78,8 +78,8 @@ docker run \
 
 ## Versions
 
-* Alpine base image : `3.17` using the Edge Repository.
-* Tor : `0.4.7.13-r1` ([alpine package](https://pkgs.alpinelinux.org/package/edge/community/x86/tor))
+* Alpine base image : `3.18` using the Edge Repository.
+* Tor : `0.4.8.6-r0` ([alpine package](https://pkgs.alpinelinux.org/package/edge/community/x86/tor))
 
 ### Docker images versioning
 
@@ -88,12 +88,12 @@ Each build is shipped through 4 identical images with each having a different ve
 * `latest`
 * `<MAJOR.MINOR>`
   * Having the latest base image and tor versions.
-  * e.g.: `ilshidur/tor-relay:2.4`
+  * e.g.: `ilshidur/tor-relay:2.5`
 * `<MAJOR.MINOR>-v<TOR ALPINE PACKAGE VERSION>`
   * Having the latest base image version.
-  * e.g.: `ilshidur/tor-relay:2.4-v0.4.7.13-r1`
+  * e.g.: `ilshidur/tor-relay:2.5-v0.4.8.6-r0`
 * `<MAJOR.MINOR>-ls<BASE IMAGE VERSION>-v<TOR ALPINE PACKAGE VERSION>`
-  * e.g.: `ilshidur/tor-relay:2.4-ls3.17-v0.4.7.13-r1`
+  * e.g.: `ilshidur/tor-relay:2.5-ls3.18-v0.4.8.6-r0`
 
 ## Configuration
 
