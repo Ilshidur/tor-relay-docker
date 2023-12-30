@@ -7,7 +7,7 @@ ENV XDG_DATA_HOME="/config" \
 XDG_CONFIG_HOME="/config"
 ENV TZ America/Los_Angeles
 
-RUN apk --no-cache add bash tzdata tor=0.4.8.6-r0
+RUN apk --no-cache add bash tzdata tor=0.4.8.10-r0
 
 EXPOSE 9001 9030
 
