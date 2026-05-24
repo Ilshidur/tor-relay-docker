@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-alpine:3.22
+FROM ghcr.io/linuxserver/baseimage-alpine:3.23
 
 LABEL org.opencontainers.image.title="tor-relay" \
       org.opencontainers.image.description="Tor relay on Linuxserver.io Alpine base image" \
@@ -19,7 +19,7 @@ ENV XDG_DATA_HOME=/config \
 RUN apk --no-cache add \
       bash \
       tzdata \
-      tor=0.4.8.21-r0 && \
+      tor=0.4.9.8-r0 && \
     mkdir -p /config /data && \
     chown -R abc:abc /config /data
 
